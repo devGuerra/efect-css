@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ccc;
+  height: 100vh;
+  ;
+}
+
+/* .overlay {
+  background-color: #0000009c;
+  z-index: 50;
+} */
+
+ul {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 20px;
+  height: 20px;
+  width: 20px;
+}
+
+li {
+  list-style-type: none;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+span {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.anchor {
+  z-index: 10;
+}
+
+.button-fb {
+  background-color: aqua;
+}
+
+.button-insta {
+  background-color: red;
+}
+
+.button-mail {
+  background-color: blueviolet;
+}
+
+ul:hover {
+  transition-delay: 0;
+}
+
+ul li {
+  transition: ease-in-out .2s;
+  transition-delay: .4s;
+}
+
+ul:hover .button-fb {
+  top: -25px;
+  left: 15px;
+}
+
+ul:hover .button-insta {
+  left: 40px;
+}
+
+ul:hover .button-mail {
+  top: 25px;
+  left: 15px;
+}
